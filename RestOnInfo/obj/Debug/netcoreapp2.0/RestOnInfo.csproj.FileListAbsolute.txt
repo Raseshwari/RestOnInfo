@@ -1,0 +1,11 @@
+C:\Users\ROSS\Documents\Study\C#\ASPNet\RestOnInfo\RestOnInfo\bin\Debug\netcoreapp2.0\RestOnInfo.deps.json
+C:\Users\ROSS\Documents\Study\C#\ASPNet\RestOnInfo\RestOnInfo\bin\Debug\netcoreapp2.0\RestOnInfo.runtimeconfig.json
+C:\Users\ROSS\Documents\Study\C#\ASPNet\RestOnInfo\RestOnInfo\bin\Debug\netcoreapp2.0\RestOnInfo.runtimeconfig.dev.json
+C:\Users\ROSS\Documents\Study\C#\ASPNet\RestOnInfo\RestOnInfo\bin\Debug\netcoreapp2.0\RestOnInfo.dll
+C:\Users\ROSS\Documents\Study\C#\ASPNet\RestOnInfo\RestOnInfo\bin\Debug\netcoreapp2.0\RestOnInfo.pdb
+C:\Users\ROSS\Documents\Study\C#\ASPNet\RestOnInfo\RestOnInfo\obj\Debug\netcoreapp2.0\RestOnInfo.csprojAssemblyReference.cache
+C:\Users\ROSS\Documents\Study\C#\ASPNet\RestOnInfo\RestOnInfo\obj\Debug\netcoreapp2.0\RestOnInfo.csproj.CoreCompileInputs.cache
+C:\Users\ROSS\Documents\Study\C#\ASPNet\RestOnInfo\RestOnInfo\obj\Debug\netcoreapp2.0\RestOnInfo.AssemblyInfoInputs.cache
+C:\Users\ROSS\Documents\Study\C#\ASPNet\RestOnInfo\RestOnInfo\obj\Debug\netcoreapp2.0\RestOnInfo.AssemblyInfo.cs
+C:\Users\ROSS\Documents\Study\C#\ASPNet\RestOnInfo\RestOnInfo\obj\Debug\netcoreapp2.0\RestOnInfo.dll
+C:\Users\ROSS\Documents\Study\C#\ASPNet\RestOnInfo\RestOnInfo\obj\Debug\netcoreapp2.0\RestOnInfo.pdb
