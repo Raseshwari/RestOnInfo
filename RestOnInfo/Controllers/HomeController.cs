@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RestOnInfo.Models;
 using RestOnInfo.Services;
 using RestOnInfo.ViewModels;
@@ -42,6 +43,7 @@ namespace RestOnInfo.Controllers
             return View(model);
         }
 
+        [Authorize]
         [HttpGet]
         public IActionResult Create()
         {
