@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+
+@foreach (var restaurant in Model.restaurants)
+{
+    @Html.Partial("_Summary", restaurant)
+}
+
+<div>
+    <a asp-action="Create">Add Restaurant</a>
+</div>
+

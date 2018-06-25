@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestOnInfo.Services
 {
-    public class InMemoryRestaurantData : IRestaurantData
+    /*public class InMemoryRestaurantData : IRestaurantData
     {
         public InMemoryRestaurantData()
         {
@@ -36,5 +36,5 @@ namespace RestOnInfo.Services
         }
 
         List<Restaurant> _restaurants;
-    }
+    }*/
 }
