@@ -5,29 +5,52 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link href="~/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700|Sirin+Stencil" rel="stylesheet">
+    <style>
+        .display {
+            position: relative;
+            background: linear-gradient(#242222,transparent), url("https://images.unsplash.com/photo-1453831362806-3d5577f014a4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9dd8da96be0724ab84e4147d428f6bba&auto=format&fit=crop&w=738&q=80");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .navbar-brand {
+            font-family: Sirin Stencil;
+            font-weight: 400;
+            font-size: 30px;
+        }
+    </style>
 </head>
-<body>
-    <nav class="navbar navbar-default">
+<body class="display">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/">RestOnInfo</a>
+                <a class="navbar-brand" href="/"><i class="fas fa-utensils"></i> RestOnInfo</a>
             </div>
             <div class="navbar-right">
                 <!--<vc:login-logout></vc:login-logout>-->
                 <!--<a class="btn btn-default" asp-controller="Account" asp-action="Login">Login</a>-->
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <div>Hello, @User.Identity.Name</div>
-                    <a class="btn btn-default" asp-controller="Account" asp-action="Logout">Logout</a>
+                    <!--<div>Hello, @User.Identity.Name</div>-->
+                    <a class="btn btn-default" style="margin-right:15px; margin-top:8px" asp-controller="Account" asp-action="Logout">Logout</a>
                 }
                 else
                 {
-                    <a class="btn btn-default" asp-controller="Account" asp-action="Login">Login</a>
+                    <a class="btn btn-default" style="margin-right:5px; margin-top:8px" asp-controller="Account" asp-action="Login">Login</a>
                 }
             </div>
         </div>
     </nav>
-    <div class="container">
+    <br />
+    <br />
+    <br /> 
+    <div style="margin-left:10px">Welcome, @User.Identity.Name</div>
+    <div class="container" style="margin-left:30%; width:50%">
+
         @RenderBody()
         <footer>
             @RenderSection("footer", required: false)
