@@ -13,7 +13,8 @@
    
     <footer>
         @RenderSection("footer", required: false)
-        @await Component.InvokeAsync("Greeter")
+       
+        <vc:login-logout></vc:login-logout>
         <!--<vc : greeter></vc : greeter>-->
 
         @if (User.Identity.IsAuthenticated)
@@ -22,8 +23,8 @@
             {
                 <h3>@identity.Name</h3>
                 <ul>
-                    @foreach(var claim in identity.Claims)
-                    { 
+                    @foreach (var claim in identity.Claims)
+                    {
                         <li>@claim.Type - @claim.Value</li>
 
                     }
@@ -32,7 +33,7 @@
         }
         else
         {
-           <div>You are not registered/logged in</div>
+            <div>You are not registered/logged in</div>
         }
     </footer>
 </body>
