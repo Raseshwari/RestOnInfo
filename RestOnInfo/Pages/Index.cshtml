@@ -1,12 +1,17 @@
 ﻿@page
 @model IndexModel
 
+@{ 
+    ViewBag.Title = "Home Page";
+ }     
+
 @foreach (var restaurant in Model.restaurants)
-{
+ {
     @Html.Partial("_Summary", restaurant)
-}
+ }
+
 
 <div>
-    <a asp-action="Create">Add Restaurant</a>
+    <a class="btn btn-primary" asp-action="Create">Add Restaurant</a>
 </div>
 

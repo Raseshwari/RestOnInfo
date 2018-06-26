@@ -13,16 +13,25 @@
                 <a class="navbar-brand" href="/">RestOnInfo</a>
             </div>
             <div class="navbar-right">
-                <vc:login-logout></vc:login-logout>
+                <!--<vc:login-logout></vc:login-logout>-->
+                <!--<a class="btn btn-default" asp-controller="Account" asp-action="Login">Login</a>-->
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div>Hello, @User.Identity.Name</div>
+                    <a class="btn btn-default" asp-controller="Account" asp-action="Logout">Logout</a>
+                }
+                else
+                {
+                    <a class="btn btn-default" asp-controller="Account" asp-action="Login">Login</a>
+                }
             </div>
         </div>
     </nav>
-    <div>
+    <div class="container">
         @RenderBody()
-    </div>
-   
-    <footer>
-        @RenderSection("footer", required: false)
-    </footer>
+        <footer>
+            @RenderSection("footer", required: false)
+        </footer>
+    </div>    
 </body>
 </html>
