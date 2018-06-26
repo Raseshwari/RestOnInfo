@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using RestOnInfo.Models;
@@ -9,6 +10,7 @@ using RestOnInfo.Services;
 
 namespace RestOnInfo.Pages.Restaurants
 {
+    [Authorize]
     public class EditModel : PageModel
     {
         private IRestaurantData _restaurantData;
@@ -21,7 +23,7 @@ namespace RestOnInfo.Pages.Restaurants
         }
         public IActionResult OnGet(int id)
         {
-           Restaurant = _restaurantData.Get(id);
+            Restaurant = _restaurantData.Get(id);
             if (Restaurant == null) {
                 return RedirectToAction("Index", "Home");
             }

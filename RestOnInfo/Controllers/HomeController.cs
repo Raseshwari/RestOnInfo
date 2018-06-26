@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace RestOnInfo.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private IRestaurantData _restaurantData;
@@ -23,6 +24,7 @@ namespace RestOnInfo.Controllers
             _greeter = greeter;
         }
 
+        [AllowAnonymous]
         //creating output model consisting consolidated information
         public IActionResult Index()
         {
@@ -43,7 +45,6 @@ namespace RestOnInfo.Controllers
             return View(model);
         }
 
-        [Authorize]
         [HttpGet]
         public IActionResult Create()
         {

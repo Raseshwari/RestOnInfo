@@ -65,20 +65,22 @@ namespace RestOnInfo
             });
 
             //app.UseDefaultFiles();
-            app.UseStaticFiles();
+            app.UseStaticFiles(); //will use files in wwwroot folder
             //app.UseFileServer();
+
+            app.UseNodeModules(env.ContentRootPath); //use bootstrap files from node_modules folder
 
             //middleware for authentication
             app.UseAuthentication();
 
             app.UseMvc(ConfigureRoutes);
 
-            app.Run(async (context) =>
+            /*app.Run(async (context) =>
             {
                 var greeting = greeter.GetMessageOfTheDay();
                 context.Response.ContentType = "text/plain";
                 await context.Response.WriteAsync($"Not found");
-            });
+            });*/
         }
 
         private void ConfigureRoutes(IRouteBuilder routeBuilder)
