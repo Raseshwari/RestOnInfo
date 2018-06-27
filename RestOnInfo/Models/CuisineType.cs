@@ -8,8 +8,24 @@ namespace RestOnInfo.Models
     public enum CuisineType
     {
         None,
-        Italian,
+        American,
+        Cajun,
+        Caribbean,
+        Chinese,
         French,
-        German
+        German,
+        Greek,
+        Indian,
+        Italian,
+        Japanese,
+        Korean,
+        Lebanese,
+        Mediterranean,
+        Mexican,
+        Moroccan,
+        Spanish,
+        Thai,
+        Turkish,
+        Vietnamese
     }
 }
